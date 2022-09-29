@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <style>
+      @import url("https://fonts.google.com/specimen/Lexend+Deca");
+      @import url("https://fonts.google.com/specimen/Big+Shoulders+Display");
+
+      :root {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        --font-1: "Lexend Deca", sans-serif;
+        --font-1-w: 400;
+        --font-2: "Big Shoulders Display", sans-serif;
+        --font-2-w: 700;
+        --dark: #37363c;
+        --yellow: #bc9334;
+        --gray: #a4acb5;
+        --blue: #346ac4;
+        --dark-cyan: hsl(184, 100%, 22%);
+        --very-dark-cyan: hsl(179, 100%, 13%);
+        --paragraph: hsla(0, 0%, 100%, 0.75);
+        --bg: hsl(0, 0%, 95%);
+        --white: hsl(0, 0%, 100%);
+        --radius: 1.5rem;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      nav {
+        position: sticky;
+        background: var(--dark);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        color: var(--white);
+        padding: 0.8rem;
+      }
+
+      .b-yellow {
+        border: 1px solid var(--yellow);
+      }
+
+      .rounded {
+        border-radius: var(--radius);
+      }
+
+      .links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .fs-sm {
+        font-size: 0.8rem;
+      }
+
+      .fs-3lg {
+        font-size: 2.3rem;
+      }
+
+      .fs-2sm {
+        font-size: 0.5rem;
+      }
+
+      .fw-bold {
+        font-weight: 900;
+      }
+
+      .btn {
+        border: 1px solid var(--yellow);
+        padding: 0.5rem 0.8rem;
+        border-radius: 1rem;
+      }
+
+      .c-gray {
+        color: var(--gray);
+      }
+
+      .c-yellow {
+        color: var(--yellow);
+      }
+
+      .c-white {
+        color: var(--white);
+      }
+
+      .bg-blue {
+        background-color: var(--blue);
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .hero {
+        height: 34.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10rem 20rem;
+        gap: 1rem;
+      }
+
+      .hero-info {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+
+      input {
+        width: 27rem;
+        height: 3.8rem;
+        background: transparent;
+        padding: 0 2rem;
+        border: 1px solid var(--white);
+        outline: none;
+        border-radius: 2rem;
+      }
+
+      .search {
+        position: relative;
+      }
+
+      .search-icon {
+        position: absolute;
+        top: 1.4rem;
+        right: 7rem;
+        color: var(--white);
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <span class="material-symbols-outlined"> radio_button_unchecked </span>
+        <div class="fs-sm c-gray">
+          <p>Freedom of Information</p>
+          <p class="c-yellow">PHILIPPINES</p>
+        </div>
+      </div>
+      <div class="links fs-sm c-gray">
+        <p>Home</p>
+        <p>Browse Requests</p>
+        <p>View Agencies</p>
+        <p>Resources</p>
+        <p>ROI Summit</p>
+        <p>FAQ</p>
+        <p class="b-yellow fs-sm btn c-gray">Login</p>
+      </div>
+    </nav>
+
+  </body>
+</html>
