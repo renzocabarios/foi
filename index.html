@@ -13,6 +13,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
     <style>
       @import url("https://fonts.google.com/specimen/Lexend+Deca");
@@ -26,9 +30,13 @@
         --font-2: "Big Shoulders Display", sans-serif;
         --font-2-w: 700;
         --dark: #37363c;
+        --dark-gray: #232323;
         --yellow: #bc9334;
+        --orange: #e18853;
         --gray: #a4acb5;
         --blue: #346ac4;
+        --dark-blue: #2e3780;
+        --hightlight: #2c68a3;
         --dark-cyan: hsl(184, 100%, 22%);
         --very-dark-cyan: hsl(179, 100%, 13%);
         --paragraph: hsla(0, 0%, 100%, 0.75);
@@ -52,6 +60,8 @@
         gap: 5rem;
         color: var(--white);
         padding: 0.8rem;
+        z-index: 999;
+        top: 0;
       }
 
       .b-yellow {
@@ -70,6 +80,10 @@
 
       .fs-sm {
         font-size: 0.8rem;
+      }
+
+      .fs-lg {
+        font-size: 1.5rem;
       }
 
       .fs-3lg {
@@ -102,8 +116,20 @@
         color: var(--white);
       }
 
+      .c-dark-blue {
+        color: var(--dark-blue);
+      }
+
+      .c-highlight {
+        color: var(--hightlight);
+      }
+
       .bg-blue {
         background-color: var(--blue);
+      }
+
+      .bg-dark-gray {
+        background-color: var(--dark-gray);
       }
 
       .logo {
@@ -146,6 +172,147 @@
         color: var(--white);
         font-size: 1rem;
       }
+
+      .sector {
+        height: 48rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0 5rem;
+      }
+      .sector-icons {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 3rem;
+      }
+
+      .sector-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .sector-icon span {
+        font-size: 5rem;
+      }
+
+      .sector-icon p {
+        font-size: 0.9rem;
+      }
+
+      .recent {
+        height: 32rem;
+        padding: 4.7rem 0;
+      }
+
+      .recent-info {
+        padding: 0 26rem;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+      }
+
+      .full {
+        width: 100%;
+        height: 100%;
+      }
+      .left-border {
+        border-style: none none none solid;
+      }
+
+      .rri-padding {
+        padding: 0 0 0 1rem;
+        margin-top: 2rem;
+      }
+
+      .spread-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .spread-row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .stroke-text {
+        -webkit-text-stroke: 0.4px var(--blue);
+        -webkit-text-fill-color: transparent;
+        font-weight: 500;
+      }
+
+      ol {
+        counter-reset: item;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 0.8rem;
+        color: var(--gray);
+      }
+      ol li {
+        display: block;
+      }
+      ol li:before {
+        content: counter(item) ". ";
+        counter-increment: item;
+        color: red;
+      }
+
+      button {
+        background-color: var(--orange);
+        outline: none;
+        border: none;
+        padding: 1rem;
+        border-radius: 2rem;
+        color: white;
+      }
+
+      footer {
+        height: 21rem;
+        padding: 3rem 30rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 2fr 1fr 2fr;
+        gap: 2rem;
+      }
+
+      .pl {
+        margin-left: 1rem;
+      }
+
+      .paragraph {
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      footer p {
+        font-size: 0.9rem;
+      }
+
+      hr {
+        width: 100%;
+      }
+
+      .connected {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+
+      .slight-gray {
+        background: #f0eef5;
+      }
     </style>
   </head>
   <body>
@@ -184,6 +351,7 @@
         <span class="material-symbols-outlined search-icon"> search </span>
       </div>
     </div>
+
     <div class="sector bg-dark-gray">
       <p class="c-white fs-3lg fw-bold">
         INFORMATION BY <span class="c-yellow">SECTOR</span>
